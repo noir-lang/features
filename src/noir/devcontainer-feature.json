@@ -12,9 +12,10 @@
           "default": "nightly"
         }
     },
-    "onCreateCommand": "nargo --version",
+    "onCreateCommand": "echo $PATH && nargo --version",
     "containerEnv": {
-        "PATH": "$_REMOTE_USER_HOME/nargo/bin:${PATH}"
+        "NARGO_HOME":"/nargo",
+        "PATH": "/nargo/bin:${PATH}"
     },
     "customizations": {
       "vscode": {
@@ -24,5 +25,4 @@
         ]
       }
   }
-  
 }
