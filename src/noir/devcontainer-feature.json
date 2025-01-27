@@ -1,0 +1,28 @@
+{
+    "id": "noir",
+    "version": "0.0.1",
+    "name": "Noir",
+    "documentationURL": "https://github.com/noir-lang/features/tree/main/src/noir",
+    "description": "Installs the Noir programming language",
+    "options": {
+        "version": {
+          "type": "string",
+          "description": "Select or enter a version of Noir to install.",
+          "proposals": ["nightly", "1.0.0-beta.1", "1.0.0-beta.0"],
+          "default": "nightly"
+        }
+    },
+    "onCreateCommand": "nargo --version",
+    "containerEnv": {
+        "PATH": "$_REMOTE_USER_HOME/nargo/bin:${PATH}"
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": [
+          "noir-lang.vscode-noir"
+        ]
+      }
+  }
+  
+}

@@ -1,0 +1,8 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["${workspaceRoot}/src/**/devcontainer-feature.json"],
+            "url": "https://raw.githubusercontent.com/devcontainers/spec/refs/heads/main/schemas/devContainerFeature.schema.json"
+        }
+    ],
+}
