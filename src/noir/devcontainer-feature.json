@@ -12,7 +12,7 @@
           "default": "nightly"
         }
     },
-    "onCreateCommand": "echo $PATH && nargo --version",
+    "onCreateCommand": "nargo --version",
     "containerEnv": {
         "NARGO_HOME":"/nargo",
         "PATH": "/nargo/bin:${PATH}"
